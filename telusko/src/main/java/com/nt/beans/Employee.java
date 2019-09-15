@@ -4,6 +4,15 @@ public class Employee {
 	private String name;
 	private int id;
 	private Address address;
+	private long phone;
+
+	public long getPhone() {
+		return phone;
+	}
+
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
 
 	public String getName() {
 		return name;
