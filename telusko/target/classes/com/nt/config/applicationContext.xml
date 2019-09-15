@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean id="operations" class="com.howtodoinjava.spring.beans.Operations"></bean> 
+		<bean id="employee" class="com.howtodoinjava.spring.beans.Employee"></bean> 
+		<bean id="department" class="com.howtodoinjava.spring.beans.Department"></bean> 
+		/telusko/src/main/java/com/nt/beans/Address.java -->
+
+	<bean id="employee" class="com.nt.beans.Employee">
+		<property name="id" value="10"></property>
+		<property name="name" value="Naga Babu"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+	<bean id="address" class="com.nt.beans.Address">
+		<property name="street" value="AmeerPet"></property>
+		<property name="city" value="Hyderabad"></property>
+
+	</bean>
+
+
+
+</beans>
